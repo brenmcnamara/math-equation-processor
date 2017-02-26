@@ -1,0 +1,36 @@
+{
+  "name": "math-equation-processor",
+  "version": "1.0.0",
+  "description": "A library for evaluating math equations",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all build-dist",
+    "build-dist": "babel src --out-dir dist --ignore __tests__",
+    "lint": "esw webpack.config.* src --color",
+    "lint-watch": "npm run lint -- --watch",
+    "test": "jest",
+    "test-watch": "npm run test -- --watch"
+  },
+  "author": "Brendan McNamara",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "math-equation-parser": "^1.0.2",
+    "npm-run-all": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.3.2",
+    "babel-preset-latest": "^6.22.0",
+    "babel-register": "^6.23.0",
+    "eslint": "^3.16.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^19.0.1",
+    "eslint-watch": "^3.0.0",
+    "jest": "^19.0.2",
+    "webpack": "^2.2.1"
+  }
+}
